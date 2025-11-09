@@ -549,14 +549,14 @@ public class MainPanel extends JPanel implements ActionListener{
 					
 			//Hot bar, displays stamina and health
 				g2D.setPaint(new Color(100, 120, 170));
-				g2D.fillRect(50, FRAME_SIZE - 50, (int)(player.getEnergy()*20), -10);
+				g2D.fillRect(50, FRAME_SIZE - 60, (int)(player.getEnergy()*20), 10);
 				g2D.setStroke(new BasicStroke(3));
 				g2D.setPaint(new Color(40, 50, 70));
 				g2D.drawRect(50, FRAME_SIZE - 60, (int)(player.getEnergyMax()*20), 10);
 				
 				g2D.setPaint(new Color(150, 100, 90));
 				if (player.getHealth() > 0) {
-					g2D.fillRect(50, FRAME_SIZE - 70, (int)(player.getHealth()*20), -10);
+					g2D.fillRect(50, FRAME_SIZE - 80, (int)(player.getHealth()*20), 10);
 				}
 				g2D.setStroke(new BasicStroke(3));
 				g2D.setPaint(new Color(100, 20, 10));
@@ -985,3 +985,4 @@ public class MainPanel extends JPanel implements ActionListener{
 		return maps;
 	}
 }
+
